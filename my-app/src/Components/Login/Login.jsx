@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import { FaUser, FaLock } from "react-icons/fa";
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleFormSubmission = (event) => {
     event.preventDefault();
     // Add your login logic here
     alert('Login Successful!');
-    window.location.href = 'dashboard.html'; // Redirect to the admin dashboard
+    navigate('/dashboard'); // Use navigate to redirect to the admin dashboard
   };
 
   return (

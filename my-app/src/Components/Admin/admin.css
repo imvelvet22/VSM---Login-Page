@@ -1,0 +1,20 @@
+/* Dashboard.css */
+
+.dashboard-wrapper {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .dashboard-wrapper h1 {
+    color: #333;
+  }
+  
+  .dashboard-wrapper p {
+    color: #666;
+  }
+  

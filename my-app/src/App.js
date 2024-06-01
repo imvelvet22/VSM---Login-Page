@@ -1,11 +1,16 @@
-import Login from './Components/Login/Login.jsx'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './Components/Login/Login';
+import Dashboard from './Components/Admin/Dashboard';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Login />
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

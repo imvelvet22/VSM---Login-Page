@@ -4,7 +4,7 @@ import './Login.css';
 import { FaUser, FaLock } from "react-icons/fa";
 
 const Login = () => {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState(''); // Change from email to username
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
@@ -22,9 +22,9 @@ const Login = () => {
         <div className="input-box">
           <input 
             type="text" 
-            placeholder="Email address" 
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Username" // Change placeholder to "Username"
+            value={username} // Change from email to username
+            onChange={(e) => setUsername(e.target.value)} // Change from setEmail to setUsername
             required 
           />
           <FaUser className='icon' />
